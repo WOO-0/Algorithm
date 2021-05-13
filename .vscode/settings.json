@@ -1,0 +1,9 @@
+{
+    "java.project.sourcePaths": [
+        "Search",
+        "Greedy",
+        "Divide_And_Conquer",
+        // "Back_Tracking",
+        "Graph"
+    ]
+}

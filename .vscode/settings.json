@@ -1,10 +1,11 @@
 {
     "java.project.sourcePaths": [
+        "String",
         "Search",
-        "Minimum_cost",
+        "Minimum_Cost_Graph",
         "Greedy",
         "Graph",
         "Divide_And_Conquer",
-        "Minimum_Cost_Graph"
+        "DynamicProgramming"
     ]
 }

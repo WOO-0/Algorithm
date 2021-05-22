@@ -1,7 +1,6 @@
 {
     "java.project.sourcePaths": [
         "Search",
-        "Minimum_cost",
         "Greedy",
         "Graph",
         "Divide_And_Conquer",

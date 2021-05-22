@@ -1,5 +1,6 @@
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 
 // 0-1 knapsack
@@ -36,20 +37,12 @@ class Bag implements Comparable<Bag> {
 
 public class Knapsak {
     public static void main(String args[]) {
-        List<Bag> bag = new ArrayList<>();
-        bag.add(new Bag(5, 50));
-        bag.add(new Bag(20, 140));
-        bag.add(new Bag(10, 60));
-        Collections.sort(bag);
-    }
-
-    static void func1(List<Bag> bag, int weight, int total) {
-        Collections.sort(bag);
-        if (weight - bag.get(0).weight >= 0) {
-
-        } else {
-
-        }
+        Bag bag[] = new Bag[3];
+        bag[0] = new Bag(5,50);
+        bag[1] = new Bag(20,140);
+        bag[2] = new Bag(10,60);
+        Arrays.sort(bag);
+        func(bag);
     }
 
     static void func(Bag bag[]) {

@@ -53,8 +53,8 @@ class Graph {
     }
 
     void MST_KRUSKAL(){
-        Edge result[] = new Edge[V];
-        for (int i=0; i<V; ++i) 
+        Edge result[] = new Edge[V-1];  // 최소 신장 트리의 간선의 수 = 정점의 수 - 1
+        for (int i=0; i<V-1; ++i) 
             result[i] = new Graph.Edge(); 
   
         // Step 1:  모든 간선들을 가중치 순으로 오름차순 정렬

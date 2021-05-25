@@ -11,8 +11,6 @@ public class Coin {
             memo[i] = -1;
         }
         System.out.println(function1(8));
-        // for(int i=0;i<memo.length;i++)
-        //     System.out.print(memo[i] + " ");
     }
     static int function(int money){
         // 재귀 알고리즘에 메모이제이션 적용
@@ -36,6 +34,7 @@ public class Coin {
         memo[money] = min + 1;
         return memo[money];
     }
+
     static int function1(int money){
         //동적 계획법을 이용
         int f[] = new int[money+1];

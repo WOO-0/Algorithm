@@ -1,17 +1,18 @@
 import java.util.Arrays;
 
-//이항 계수
+//이항 계수, nCr, 파스칼의 삼각형
 public class Binomial_Coefficient {
     static int B[][];
     public static void main(String args[]){
-        System.out.println(bino(7,4));
+        // System.out.println(bino(7,4));
         int n = 5;
         int r = 3;
         B = new int[n+1][r+1];
         for(int i=0;i<B.length;i++){
             Arrays.fill(B[i], -1);
         }
-        System.out.println(bino1(n,r));
+        // System.out.println(bino(n,r));
+        // System.out.println(bino1(n,r));
         System.out.println(bino2(n,r));
     }
     static int bino(int n,int k){
@@ -35,8 +36,8 @@ public class Binomial_Coefficient {
     static int bino2(int n,int k){
         int f[][] = new int[n+1][k+1];
         for(int i=1;i<=n;i++){
-            for(int j=0;j<=Math.min(n, k);j++){
-                if(j == 0 || j == i)
+            for(int j=0;j<=k;j++){
+                if(j == 0 || i==j)
                     f[i][j] = 1;
                 else
                     f[i][j] = f[i-1][j-1] + f[i-1][j];

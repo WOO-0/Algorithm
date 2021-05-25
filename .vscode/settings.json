@@ -1,10 +1,14 @@
 {
     "java.project.sourcePaths": [
-        "String",
-        "Search",
-        "Greedy",
-        "Graph",
-        "Divide_And_Conquer",
-        "DynamicProgramming"
+        "NP_Complete",
+        "8.DynamicProgramming",
+        "7.String",
+        "6.Minimum_Cost_Graph",
+        "5.Graph",
+        "4.Back_Tracking",
+        "3.Divide_And_Conquer",
+        "2.Greedy",
+        "1.Search",
+        "_Backjun"
     ]
 }
